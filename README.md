@@ -39,10 +39,10 @@
 		<img src="https://img.shields.io/badge/number%20guessing%20game-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/closestPalindromicFinder/">
-		<img src="https://img.shields.io/badge/live-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+		<img src="https://img.shields.io/badge/closest%20palindromic-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/sentenceCapitalizer/">
-		<img src="https://img.shields.io/badge/live-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+		<img src="https://img.shields.io/badge/sentence%20capitalizer-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
 </div>
 
