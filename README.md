@@ -56,5 +56,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/consonantsFiltering/">
 		<img src="https://img.shields.io/badge/letter%20filtering-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/repeatingOccurences/">
+		<img src="https://img.shields.io/badge/nonunique%20finder-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
