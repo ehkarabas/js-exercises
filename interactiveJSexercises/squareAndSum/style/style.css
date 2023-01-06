@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+body {
+  text-align: center;
+  font-family: tahoma;
+  height: 100vh;
+  background: linear-gradient(to top left, #83d88a, #7396e8);
+  /* background: linear-gradient(90deg, #83d88a 0%, #7396e8 100%); */
+}
+
+.logo {
+  width: 10rem;
+}
+
+p {
+  font-style: italic;
+  font-family: "Fira Code", monospace;
+}
