@@ -47,5 +47,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/emailPartialEncyription/">
 		<img src="https://img.shields.io/badge/email%20encyription-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/arrayAverageCalculator/">
+		<img src="https://img.shields.io/badge/avg%20calculator-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
