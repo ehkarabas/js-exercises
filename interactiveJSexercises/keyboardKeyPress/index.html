@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/ios/2x/keyboard.png"
+      type="image/x-icon"
+    />
+    <title>Keyboard Key Press</title>
+  </head>
+  <body
+    style="
+      /* background-color: #222; */
+      color: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    "
+  >
+    <div
+      id="charDiv"
+      style="padding: 0 2rem; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35)"
+    >
+      <p id="initialMsg" style="font-size: 2rem">
+        <b>Press any keyboard key</b>
+      </p>
+      <p id="char"></p>
+    </div>
+    <div id="asciiDiv">
+      <p id="ascii"></p>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
