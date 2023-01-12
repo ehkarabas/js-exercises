@@ -65,5 +65,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/keyboardKeyPress/">
 		<img src="https://img.shields.io/badge/key%20press-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/randomBackgroundColor/">
+		<img src="https://img.shields.io/badge/random%20bgcolor-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
