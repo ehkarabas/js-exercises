@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/color/2x/123.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Number Guessing JS</title>
+  </head>
+  <body>
+    <div id="modalWrapper"></div>
+    <section class="modal" id="modal">
+      <div class="modal-header">
+        <h3>Rules Of The Game</h3>
+        <button id="modalClose">&#10005;</button>
+      </div>
+      <ul>
+        <li>A random number is selected by the game between 1 and 100</li>
+        <li>The player is supposed to guess the namber</li>
+        <li>
+          If the player guess smaller number than the secret number, then they
+          are warned to increase their guess.
+        </li>
+        <li>
+          If the player guess bigger number tan the secret number, then they are
+          warned to decrease their guess.
+        </li>
+        <li>Everytime the player makes wrong guess, they lose 1 point.</li>
+      </ul>
+      <button id="gotIt">Got It</button>
+    </section>
+
+    <div id="gamePage">
+      <header>
+        <h1>
+          Guess The Number<br style="display: none" class="h1Break" />
+          (1 - 100)
+        </h1>
+      </header>
+      <main>
+        <section class="section-left">
+          <div class="btn">
+            <button class="check"><span>Check</span></button>
+          </div>
+          <input type="number" class="guess" min="1" max="20" />
+          <p class="current-attempt">
+            <span class="currAtt1">Number</span
+            ><span class="currAtt2">No</span> of attempts:
+            <span class="attempt">0</span>
+          </p>
+        </section>
+
+        <section class="images">
+          <div class="regular-img">
+            <img src="./images/hat.png" alt="hat image" class="visual" />
+          </div>
+          <img
+            src="./images/cute.gif"
+            alt="thinking image"
+            class="visual hidden"
+          />
+          <img
+            src="./images/guess.png"
+            alt="congrats image"
+            class="visual hidden"
+          />
+        </section>
+
+        <section class="section-right">
+          <p class="message">Start guessing...</p>
+          <button class="again hidden"><span>Play Again?</span></button>
+          <p class="last hidden">Your last chance</p>
+          <p class="current-score">Score: <span class="score">7</span></p>
+          <p class="hScore">High Score: <span class="high-score">0</span></p>
+        </section>
+      </main>
+      <footer>
+        <img
+          src="./images/ehlogo-transparent.png"
+          alt="logo"
+          class="fixed-bottom"
+        />
+      </footer>
+    </div>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
