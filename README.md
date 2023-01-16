@@ -71,5 +71,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/numberGuessingGameAdv/">
 		<img src="https://img.shields.io/badge/num%20guess%20adv-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/counters/">
+		<img src="https://img.shields.io/badge/counters-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
