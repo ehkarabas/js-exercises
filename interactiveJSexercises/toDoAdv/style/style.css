@@ -1,0 +1,187 @@
+/* * FONT AWESOME INTEGRATION */
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"); */
+
+/* * GOOGLE FONTS INTEGRATION */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/* font-family: 'Fira Code', monospace;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.done {
+  text-decoration: line-through;
+  background-color: rgba(126, 190, 126, 0.998) !important;
+}
+
+.edit {
+  border: 4px dashed rgba(44, 238, 186, 0.703) !important;
+}
+
+.del {
+  background-color: rgba(190, 126, 126, 0.998) !important;
+  color: rgba(0, 0, 0, 0.436) !important;
+}
+
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 92.3% 71.5%,
+    rgba(83, 138, 214, 1) 0%,
+    rgba(134, 231, 214, 1) 90%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 205vh;
+  font-family: "Fira Code", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+}
+
+main > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > header > img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+main > header > h1 {
+  font-size: 2rem;
+}
+
+main > div.seperator {
+  width: 90%;
+  height: 1rem;
+  border-bottom: 2px solid gray;
+}
+
+main > section.add-to-do {
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed gray;
+}
+
+main > section.add-to-do,
+main > section.to-dos,
+footer {
+  width: 60%;
+  min-width: 250px;
+  position: relative;
+}
+
+main > section.to-dos > ul.to-dos-list {
+  width: 100%;
+  list-style-type: none;
+}
+
+main > section.to-dos > ul.to-dos-list > li.to-do-item {
+  position: relative;
+}
+
+main > section.add-to-do > textarea#addToDo,
+main > section.to-dos textarea#toDo {
+  width: 100%;
+  resize: none;
+  padding: 0.5rem 5rem 0.25rem 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid rgba(128, 128, 128, 0.447);
+}
+
+main > section.add-to-do > textarea#addToDo {
+  padding-right: 2.5rem;
+}
+
+main > section.to-dos textarea#toDo {
+  padding-left: 3rem;
+}
+
+main > section.to-dos span {
+  padding-left: 3rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 100%;
+}
+
+main > section.add-to-do > i.fa-solid.fa-plus,
+main > section.to-dos i.fa-solid.fa-pen,
+main > section.to-dos i.fa-solid.fa-check.pen,
+main > section.to-dos i.fa-solid.fa-square-xmark.trashNo,
+main > section.to-dos i.fa-solid.fa-trash,
+main > section.to-dos i.fa-solid.fa-check.trash,
+main > section.to-dos i.fa-sharp.fa-solid.fa-square-xmark.penNo {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+
+main > section.to-dos i.fa-solid.fa-pen,
+main > section.to-dos i.fa-solid.fa-check.pen,
+main > section.to-dos i.fa-solid.fa-square-xmark.trashNo {
+  right: 3rem;
+}
+
+main > section.to-dos i.fa-regular.fa-square,
+main > section.to-dos i.fa-solid.fa-check-to-slot {
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  font-size: 1.5rem;
+}
+
+main i:hover {
+  opacity: 0.5;
+}
+
+footer {
+  width: 60%;
+  text-align: center;
+}
+
+footer section.message-modal {
+  border: 2px solid gray;
+  padding: 0.5rem;
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 415px) {
+  html {
+    font-size: 0.9rem;
+  }
+  main > section.add-to-do,
+  main > section.to-dos,
+  footer {
+    width: 90%;
+    min-width: 250px;
+  }
+}
