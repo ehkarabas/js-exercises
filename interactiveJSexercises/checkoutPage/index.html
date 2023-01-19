@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/external-sbts2018-outline-color-sbts2018/2x/external-checkout-black-friday-5-basic-sbts2018-outline-color-sbts2018.png"
+      type="image/x-icon"
+    />
+    <!-- * FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- * GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * EXTERNAL CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <main>
+      <h1>Checkout</h1>
+
+      <section class="item-cards">
+        <section class="item-card">
+          <div class="card-image">
+            <img src="./assets/4090.jpg" alt="" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-title">
+              <h3>4090 Graphics Card</h3>
+              <p>
+                <span class="card-item-price">$1355.99</span>
+                <span class="card-item-old-price">$1455.99</span>
+              </p>
+            </div>
+
+            <div class="card-buttons">
+              <div class="quantity-buttons">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity">0</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+
+              <div class="remove-button">
+                <button>Remove</button>
+              </div>
+            </div>
+
+            <div class="card-price">
+              <p>
+                Product Total:
+                <span class="card-item-total-price">$0</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="item-card">
+          <div class="card-image">
+            <img src="./assets/4080.jpg" alt="" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-title">
+              <h3>4080 Graphics Card</h3>
+              <p>
+                <span class="card-item-price">$1015.99</span>
+                <span class="card-item-old-price">$1115.99</span>
+              </p>
+            </div>
+
+            <div class="card-buttons">
+              <div class="quantity-buttons">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity">0</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+
+              <div class="remove-button">
+                <button>Remove</button>
+              </div>
+            </div>
+
+            <div class="card-price">
+              <p>
+                Product Total:
+                <span class="card-item-total-price">$0</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="item-card">
+          <div class="card-image">
+            <img src="./assets/4070ti.jpg" alt="" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-title">
+              <h3>4070-TI Graphics Card</h3>
+              <p>
+                <span class="card-item-price">$675.99</span>
+                <span class="card-item-old-price">$775.99</span>
+              </p>
+            </div>
+
+            <div class="card-buttons">
+              <div class="quantity-buttons">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity">0</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+
+              <div class="remove-button">
+                <button>Remove</button>
+              </div>
+            </div>
+
+            <div class="card-price">
+              <p>
+                Product Total:
+                <span class="card-item-total-price">$0</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="total-price">
+        <div class="sub-total">
+          <span>Subtotal</span>
+          <span id="subtotal">$0</span>
+        </div>
+
+        <div class="tax">
+          <span>Tax(%18)</span>
+          <span id="tax">$0</span>
+        </div>
+
+        <div class="shipping">
+          <span>Shipping</span>
+          <span id="shipping">$0</span>
+        </div>
+
+        <div class="total">
+          <span><b>Total</b></span>
+          <span id="total">$0</span>
+        </div>
+      </section>
+    </main>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
