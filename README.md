@@ -83,5 +83,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/checkoutPage/">
 		<img src="https://img.shields.io/badge/checkout%20page-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/romanNumerals/">
+		<img src="https://img.shields.io/badge/decimal%202%20roman-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
