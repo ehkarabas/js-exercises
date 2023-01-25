@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/emoji/2x/two-hump-camel-emoji.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Camel Case Converter</title>
+  </head>
+  <body>
+    <h1>Converting To Camel Case</h1>
+    <form class="input-area">
+      <div class="kebab-wrap">
+        <label for="kebabOrWspaces">Kebab Case or with whitespaces:</label>
+        <input type="text" class="camelCase" id="kebabOrWspaces" />
+      </div>
+      <button id="convert" type="submit">Convert</button>
+      <div class="input-logger hidden">
+        <p>Camel Case of:</p>
+        <p id="inputLog"></p>
+      </div>
+      <div class="camel-wrap">
+        <label for="camelCase">Camel Case:</label>
+        <input type="text" class="camelCase" id="camelCase" disabled />
+      </div>
+    </form>
+    <script src="./script/camelCaseConverter.js"></script>
+  </body>
+</html>
