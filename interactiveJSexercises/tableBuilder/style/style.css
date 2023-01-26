@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+table,
+img {
+  min-width: 280px;
+  width: 70%;
+  max-width: 1000px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #fff;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #822222;
+  color: #fff;
+}
+
+button:active {
+  background-color: initial;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #4e4e4e;
+}
+
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
