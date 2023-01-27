@@ -92,5 +92,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/tableBuilder/">
 		<img src="https://img.shields.io/badge/table%20builder-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/weatherApp/">
+		<img src="https://img.shields.io/badge/weather%20app-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 

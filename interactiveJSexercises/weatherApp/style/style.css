@@ -1,0 +1,210 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap"); */
+
+/* font-family: "Fira Code", monospace; */
+/* font-family: "Roboto", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #111;
+}
+
+h1,
+h3 {
+  font-weight: 400;
+}
+
+.weather-app {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/images/day/cloudy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  transition-duration: 500ms;
+  opacity: 1;
+}
+
+/* Background Overlay */
+.weather-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+/* General Weather Conditions And Time Display */
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem 4rem 3rem;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-time,
+.weather {
+  margin: 0 1rem;
+}
+
+.city-time h1 {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.temp {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.weather img {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* City Search/Select And Detailed Weather Conditions Display */
+.panel {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(110, 110, 110, 0.25);
+  box-shadow: -8px 0px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+  padding: 3rem 2rem;
+  overflow-y: scroll;
+}
+
+.panel form {
+  margin-bottom: 3rem;
+}
+
+.submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5rem;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: #fa6d1b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition-duration: 0.4s;
+}
+
+.submit:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.search {
+  background: none;
+  border: none;
+  border-bottom: 1px #ccc solid;
+  color: #fff;
+  padding: 0 1rem 0.5rem 0;
+  width: 80%;
+  font-size: 1.1rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  color: #ccc;
+}
+
+.panel ul {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  margin: 2rem 0;
+}
+
+.panel ul li {
+  color: #ccc;
+  margin: 2.5rem 0;
+}
+
+.panel ul h4 {
+  margin: 3rem 0;
+}
+
+.city {
+  display: block;
+  cursor: pointer;
+}
+
+.city:hover {
+  color: #fff;
+}
+
+.details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 860px) {
+  .panel,
+  .container {
+    position: relative;
+    width: 100%;
+    top: initial;
+  }
+
+  .details li {
+    border-bottom: 1px dashed #ccc;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  html {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container > div {
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .weather-app {
+    min-height: 40rem;
+  }
+
+  .details li {
+    border-bottom: none;
+  }
+}
