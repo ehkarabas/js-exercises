@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/ios/2x/accounting.png"
+      type="image/x-icon"
+    />
+    <!-- * GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * FONTAWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- * BOOTSTRAP CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- * EXTERNAL CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Budget Tracker</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div
+        class="budget-app container d-flex flex-column gap-3 justify-content-center text-center p-3"
+      >
+        <!-- * HEADER -->
+        <header class="d-flex flex-column gap-3">
+          <h1 class="text-info fw-bold app-title">
+            Monthly Expense Tracking App
+          </h1>
+          <div
+            class="info-message-wrapper d-flex justify-content-between align-items-center p-2 w-50 m-auto gap-sm-5 rounded-4 hidden"
+          >
+            <span class="info-message"></span>
+            <i class="fa-solid fa-x fa-2x"></i>
+          </div>
+        </header>
+
+        <main>
+          <!-- * FORM -->
+          <form id="incomeForm">
+            <div class="d-flex justify-content-between gap-2 mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="inputIncomeAmount"
+                placeholder="Add Income"
+                step="50"
+              />
+              <button type="submit" class="add-income btn btn-info">Add</button>
+            </div>
+          </form>
+
+          <form id="expenseForm"></form>
+            <div class="row g-3 text-start">
+              <div class="col-md-6">
+                <label for="inputExpenseItem" class="form-label"
+                  >Expense Item</label
+                >
+                <input
+                  class="form-control"
+                  list="expenseItemOptions"
+                  id="inputExpenseItem"
+                  placeholder="Grocery, bill etc."
+                />
+                <datalist id="expenseItemOptions">
+                  <option value="Grocery"></option>
+                  <option value="Bill"></option>
+                  <option value="E-Commerce"></option>
+                  <option value="Travel"></option>
+                  <option value="Restaurant"></option>
+                </datalist>
+              </div>
+              <div class="col-md-6">
+                <label for="inputDateTimeLocal" class="form-label">Date</label>
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="inputDateTimeLocal"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputExpenseAmount" class="form-label"
+                  >Expense Amount</label
+                >
+                <input
+                  class="form-control"
+                  list="expenseAmountOptions"
+                  id="inputExpenseAmount"
+                  placeholder="100₺"
+                  type="number"
+                  step="50"
+                />
+                <datalist id="expenseAmountOptions">
+                  <option value="300"></option>
+                  <option value="500"></option>
+                  <option value="750"></option>
+                  <option value="1000"></option>
+                  <option value="1500"></option>
+                </datalist>
+              </div>
+
+              <div
+                class="col-12 d-flex justify-content-center mt-3 position-relative"
+              >
+                <button type="submit" class="add-expense btn btn-info">Save
+                </button>
+                <button type="reset" class="clear btn btn-info">Clear</button>
+              </div>
+            </div>
+          </form>
+
+          <div>
+            <!-- * EXPENSE TABLE -->
+            <table
+              class="expenses-table table table-striped table-bordered mt-3"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Expense</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                  <td>2023-01-01 00:00:00</td>
+                  <td>Grocery</td>
+                  <td>5000₺</td>
+                  <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+                <tr>
+                  <td>2023-01-01 00:00:00</td>
+                  <td>Grocery</td>
+                  <td>5000₺</td>
+                  <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+                <tr>
+                  <td>2023-01-01 00:00:00</td>
+                  <td>Grocery</td>
+                  <td>5000₺</td>
+                  <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+                <tr>
+                  <td>2023-01-01 00:00:00</td>
+                  <td>Grocery</td>
+                  <td>5000₺</td>
+                  <td><i class="fa-solid fa-trash"></i></td> -->
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- * TOTAL TABLE -->
+            <table
+              class="total-table table table-striped table-borderless mt-5"
+            >
+              <tbody>
+                <tr>
+                  <td>Income : <span id="totalIncome"></span></td>
+                </tr>
+                <tr>
+                  <td>Expense : <span id="totalExpense"></span></td>
+                </tr>
+                <tr>
+                  <td>Balance : <span id="left"></span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center mt-3 gap-4">
+              <button type="button" class="reset btn btn-info">
+                Reset Table(Temp)
+              </button>
+              <button type="button" class="wipe btn btn-danger">
+                Wipe Logs(Perm)
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="brand d-flex align-items-center gap-1">
+        <img src="./images/ehlogo-transparent.png" alt="logo" class="logo">
+        <p class="display-6 mb-0">Cool<span class="text-info">Dev</span></p>
+      </div>
+    </div>
+    <!-- * BOOTSTRAP CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- * EXTERNAL JS -->
+    <script src="./script/app.js"></script>
+  </body>
+</html>

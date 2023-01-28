@@ -1,0 +1,110 @@
+/* font-family: 'Fira Code', monospace;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  color: #fff;
+  background-color: #fff;
+}
+
+/* Background Overlay */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.container-fluid {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 500ms;
+  overflow-y: scroll;
+}
+
+.budget-app {
+  position: relative;
+  min-width: 240px;
+  z-index: 2;
+}
+
+.info-message-wrapper {
+  min-width: 230px;
+}
+
+i.fa-solid.fa-x.fa-2x:hover,
+i.fa-solid.fa-trash:hover {
+  opacity: 0.7;
+}
+
+.clear {
+  position: absolute;
+  right: 8px;
+}
+
+table {
+  border: 1px solid black !important;
+  background-color: rgba(255, 255, 255);
+}
+
+.total-table {
+  max-width: 500px !important;
+  width: 40% !important;
+  min-width: 150px !important;
+  margin-left: auto !important;
+}
+
+.total-table td {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.total-table td span::after {
+  content: "₺";
+}
+
+.hidden {
+  display: none !important;
+}
+
+.brand {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.brand img {
+  width: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 0.9rem;
+  }
+  .app-title {
+    /* word-break: break-all; */
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 0.7rem;
+  }
+  .app-title {
+    /* word-break: break-all; */
+  }
+}
