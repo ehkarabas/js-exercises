@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/cotton/2x/filled-flag.png"
+      type="image/x-icon"
+    />
+    <!-- * FONTAWESOME CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- * BOOTSTRAP CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- * GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * EXTERNAL CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Country Infos</title>
+  </head>
+  <body class="bg-dark text-light">
+    <!-- * BOOTSTRAP JS CDN -->
+    <div
+      class="container text-center d-flex flex-column justify-content-center gap-3"
+    >
+      <h1 class="display-6 text-danger mt-3">COUNTRIES</h1>
+      <select
+        class="form-select w-75 m-auto"
+        aria-label="Default select example"
+        id="select"
+      >
+        <option selected disabled>Select Country</option>
+      </select>
+
+      <div class="card text-black mt-5 w-75 m-auto hidden" id="errorWrap">
+        <img
+          src="https://picsum.photos/id/1025/210/140"
+          class="card-img-top"
+          alt="error image"
+          id="errorImg"
+        />
+        <div class="card-body">
+          <p class="card-text" id="errorText"></p>
+        </div>
+      </div>
+
+      <div class="card text-black mt-5 w-75 m-auto hidden" id="card">
+        <img
+          src="https://picsum.photos/id/1025/210/140"
+          class="card-img-top"
+          alt="country flag"
+          id="image"
+        />
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-uppercase" id="country">
+            Card title
+          </h5>
+        </div>
+        <ul class="list-group list-group-flush text-start">
+          <li class="list-group-item" id="regionLi">
+            <span>
+              <i class="fa-solid fa-earth-oceania"></i>
+              <b>Region:</b>
+            </span>
+            <span id="region"></span>
+          </li>
+          <li class="list-group-item" id="capitalLi">
+            <span>
+              <i class="fa-solid fa-landmark"></i>
+              <b>Capital:</b>
+            </span>
+            <span id="capital"></span>
+          </li>
+          <li class="list-group-item" id="languagesLi">
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              <b>Languages:</b>
+            </span>
+            <span id="languages"></span>
+          </li>
+          <li class="list-group-item" id="currenciesLi">
+            <span>
+              <i class="fa-solid fa-money-bill-1-wave"></i>
+              <b>Currencies:</b>
+            </span>
+            <span id="currencies"></span>
+          </li>
+          <li class="list-group-item" id="populationLi">
+            <span>
+              <i class="fa-solid fa-people-group"></i>
+              <b>Population:</b>
+            </span>
+            <span id="population"></span>
+          </li>
+          <li class="list-group-item" id="bordersLi">
+            <span>
+              <i class="fa-solid fa-road-barrier"></i>
+              <b>Borders:</b>
+            </span>
+            <span id="borders"></span>
+          </li>
+          <li class="list-group-item" id="mapLi">
+            <span>
+              <i class="fa-solid fa-map-location-dot"></i>
+              <b>Map:</b>
+            </span>
+            <a
+              href="#"
+              target="_blank"
+              id="map"
+              class="btn btn-warning text-black"
+              >Go to google map</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- * EXTERNAL JS -->
+    <script src="./script/app.js"></script>
+  </body>
+</html>

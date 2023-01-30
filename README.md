@@ -98,5 +98,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/budgetApp/">
 		<img src="https://img.shields.io/badge/budget%20app-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/countryInfos/">
+		<img src="https://img.shields.io/badge/country%20infos-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
