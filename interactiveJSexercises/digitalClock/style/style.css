@@ -1,0 +1,46 @@
+/* font-family: 'Fira Code', monospace; */
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+  font-family: "Fira Code", monospace !important;
+  height: 100vh !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #222 !important;
+  color: aqua !important;
+  text-align: center !important;
+}
+
+.navbar .container-fluid .container {
+  width: fit-content !important;
+  margin: 0 !important;
+}
+
+.navbarNavDropdown {
+  position: fixed !important;
+  right: 10px;
+  top: 10px;
+}
+
+.dropdown-item,
+.dropdown-menu li,
+.dropdown-menu {
+  width: fit-content !important;
+}
+
+.dropdown-menu {
+  min-width: fit-content !important;
+}
+
+#h12 {
+  position: relative !important;
+  top: -0.65em !important;
+  font-size: 0.5em !important;
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 0.7rem !important;
+  }
+}
