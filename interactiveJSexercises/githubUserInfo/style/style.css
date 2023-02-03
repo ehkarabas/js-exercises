@@ -1,0 +1,15 @@
+.hidden {
+  display: none !important;
+}
+
+form input {
+  min-width: 100px !important;
+  width: 50% !important;
+  max-width: 400px !important;
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 0.7rem;
+  }
+}

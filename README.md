@@ -107,5 +107,8 @@
 	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/passwordGenerator/">
 		<img src="https://img.shields.io/badge/pwd%20generator-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/js-exercises/interactiveJSexercises/githubUserInfo/">
+		<img src="https://img.shields.io/badge/github%20user%20info-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
